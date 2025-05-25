@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto</title>
+    <link rel="stylesheet" href="index.css"> 
+    <!-- Linking Font Awesome for Icons --> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <style>
+        .sort-icon {
+            cursor: pointer;
+            margin-left: 5px;
+        }
+     </style>
+
+    </head>
+<body>
+    <nav>
+        <div class="left-nav">
+            <a href="index.html" class="title"> CRYPTO TRACKER </a>
+
+        </div>
+        <div class="right-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="./Favorite.html" class="nav-link">Liked Coins</a>
+            <div class="search-container">
+                <input type="text" id="search-box" placeholder="Search coin..." autocomplete="off">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="dialog-box" id="search-dialog">
+                    <div class="dialog-content">
+                        <span id="close-dialog" class="close-btn">&times;</span>
+                        <h2>Search Results</h2>
+                        <ul id="search-results">
+
+                        </ul>
+                    </div>
+            </div>
+            
+    </nav>
+    <h1 style="text-align: center;">Favorite Coins</h1>
+    <div class="search-container" style="display: none;"></div>
+
+        <table id="Favorite-table">
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>Icon</th>
+                    <th>Name</th>.
+                    <th>price
+                        <i id="sort-price-asc" class="fa-solid fa-arrow-up"></i>
+                        <i id="sort-price-desc" class="fa-solid fa-arrow-down"></i> 
+                    </th>
+                    <th>Volume
+                        <i id="sort-volume-asc" class="fa-solid fa-arrow-up"></i>
+                        <i id="sort-volume-desc" class="fa-solid fa-arrow-down"></i>
+                    </th>
+                    <th>Market Cap
+                        <i id="sort-market-asc" class="fa-solid fa-arrow-up"></i>
+                        <i id="sort-market-desc" class="fa-solid fa-arrow-down"></i>
+                    </th>
+                    <th>Remove</th>
+                    </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>                            
+            <p id="no-favorites" style="display: none; text-align: center;">You haven't liked any coins yet.</p>
+
+    <script src="https://kit.fontawesome.com/ddb58420dc.js" crossorigin="anonymous"></script>
+    <script src="./Favorite.js"></script>
+    
+</body>
+
+</html>
